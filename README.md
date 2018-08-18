@@ -10,7 +10,7 @@ ansible-playbook -i hosts vlan_configuration.yml
 - Assign the voice and data vlans to some ports
 
 **The Playbook perform two tasks:**
-  The first task is to generate a configuration file (*conf.cfg*) and add it to the current directory
-  The second task is to deploy the configuration by using the file generated previously
+  - The first task is to generate a configuration file (*conf.cfg*) and add it to the current directory
+  - The second task is to deploy the configuration by using the file generated previously
 
 All the variables are defined inside group_vars/all.yml file.
