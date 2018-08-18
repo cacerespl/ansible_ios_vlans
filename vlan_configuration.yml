@@ -1,0 +1,15 @@
+---
+- hosts: ios
+  gather_facts: no
+  connection: local
+
+  tasks:
+    - name: Generate configuration file
+      template: src=conf.j2 dest=./conf.cfg
+      
+    - name: Deploy the conf-file generated
+      ios_config:
+        src: "conf.cfg"
+        provider: "{{ ios_provider }}"
+      
+

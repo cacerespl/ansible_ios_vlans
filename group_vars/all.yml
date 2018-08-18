@@ -1,0 +1,16 @@
+---
+  ios_provider:
+    username: admin_user
+    password: admin_password
+    host: "{{ inventory_hostname }}"
+
+  users:
+    - john
+    - bob
+    - foo
+    - another_user
+
+  vlans:
+    Voz : {id: 10}
+    Datos : {id: 20}
+
